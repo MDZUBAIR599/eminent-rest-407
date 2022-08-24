@@ -16,7 +16,6 @@ const Navbar1 = () => {
     <Box>
         <SimpleGrid
 
-        column={1,2,3}
         style={{display:"flex",
         justifyContent:"space-around",
         height:"70px",
