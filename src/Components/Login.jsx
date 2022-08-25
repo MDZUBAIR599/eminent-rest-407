@@ -14,7 +14,8 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
-import Dashborad from "./Dashborad";
+import Dashboard from "./Dashboard";
+
 
 export default function Login() {
   const [emaillog, setEmaillog] = useState("");
@@ -123,7 +124,7 @@ export default function Login() {
           </Flex>
         </form>
       ) : (
-        <Dashborad />
+      <Dashboard/>
       )}
     </div>
   );
