@@ -1,11 +1,11 @@
 
 import { Box, Button, Drawer,  DrawerCloseButton, DrawerContent, DrawerOverlay, Image,  Link, Menu, MenuButton, MenuItem, MenuList, Text, useDisclosure } from '@chakra-ui/react'
 import React from 'react'
+import { isAuth } from '../IsAuth'
 import {ChevronDownIcon} from "@chakra-ui/icons"
-import styles from "../styles/Navbar2.module.css"
-import { isAuth } from './IsAuth'
 import { Navigate, useNavigate } from 'react-router'
 
+import styles from "../styles/Navbar2.module.css"
 const Navbar2 = () => {
   const username=isAuth()
 const navigate =useNavigate();
