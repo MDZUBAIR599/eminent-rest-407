@@ -1,11 +1,15 @@
 
 import { Box, Button, Drawer,  DrawerCloseButton, DrawerContent, DrawerOverlay, Image,  Link, Menu, MenuButton, MenuItem, MenuList, Text, useDisclosure } from '@chakra-ui/react'
+import { Flex } from "@chakra-ui/react";
+
 import React from 'react'
 import { isAuth } from '../IsAuth'
 import {ChevronDownIcon} from "@chakra-ui/icons"
-import { Navigate, useNavigate } from 'react-router'
+import {  useNavigate } from 'react-router'
 
 import styles from "../styles/Navbar2.module.css"
+import Product from './products';
+import { products } from './Template';
 const Navbar2 = () => {
   const username=isAuth()
 const navigate =useNavigate();
@@ -117,13 +121,12 @@ function Grid() {
            <Text>GetFeedback</Text>
             <Text>Customer feedback for Salesforce</Text>
            </Link></li>
-
+         
           </ul>
-           
-  
-            
           </DrawerContent>
-        </Drawer>
+        </Drawer
+        >
+       
       </>
     )
   }
