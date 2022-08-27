@@ -1,7 +1,7 @@
-import React from 'react'
 import { Box, Image, Select, Text } from '@chakra-ui/react'
+import React from 'react'
 
-export default function Fotter() {
+const Footer = () => {
   return (
     <div>
       <Box marginTop={'50px'}>
@@ -38,3 +38,5 @@ export default function Fotter() {
     </div>
   )
 }
+
+export default Footer

@@ -1,12 +1,24 @@
-import logo from './logo.svg';
+import { Box } from '@chakra-ui/react';
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Navbar from './Components/Navbar';
-import Allroutes from './Allroutes.jsx/Allroutes';
+import Dashborad from './Components/Dashborad';
+import Homepage from './Components/Homepage';
+import Login from './Components/Login';
+import Signup from './Components/Signup';
+
 
 function App() {
   return (
     <div className="App">
-     <Allroutes/>
+      <Box>
+      <Routes>
+          <Route path="/" element={<Homepage />}  />
+          <Route path="/dashboard" element={<Dashborad />}  />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+      </Routes>
+    {/* <Dashborad /> */}
+       </Box>
     </div>
   );
 }
