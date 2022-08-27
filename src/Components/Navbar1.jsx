@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Image, Link, Menu, MenuButton, MenuItem, MenuList,  SimpleGrid,  Text} from '@chakra-ui/react'
+import { Box, Button, Image, Link, Menu, MenuButton, MenuItem, MenuList,  Text} from '@chakra-ui/react'
 import {ArrowForwardIcon, ChevronDownIcon} from "@chakra-ui/icons"
 import React from 'react'
 import { useNavigate } from 'react-router'
@@ -14,9 +14,7 @@ const Navbar1 = () => {
   }
   return (
     <Box>
-        <SimpleGrid
-
-        style={{display:"flex",
+        <div style={{display:"flex",
         justifyContent:"space-around",
         height:"70px",
         width:"100%",
@@ -27,8 +25,7 @@ const Navbar1 = () => {
        alignItems:"center",
       zIndex:3,
          boxShadow: "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
-        }}
-        >
+        }}>
         <Box width="200px" >
            <Link to="/">
            <Image src="https://prod.smassets.net/assets/cms/cc/app/2.178.0/images/logo-surveymonkey.svg" />
@@ -252,7 +249,7 @@ const Navbar1 = () => {
           
             <Button backgroundColor="#f9be00" onClick={handleSignup}>Sign up free</Button>
         </Box>
-        </SimpleGrid>
+        </div>
     </Box>
   )
 }

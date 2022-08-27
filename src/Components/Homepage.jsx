@@ -2,15 +2,16 @@ import { Box,Text,Button,Image,Link } from '@chakra-ui/react'
 import React from 'react'
 
 import styles from "../styles/Home.module.css";
-import Navbar1 from './Navbar';
-
+import Footer from './Footer';
+import Navbar1 from './Navbar1'
 
 
 const Homepage = () => {
   return (
     <div>
        <Navbar1 />
-    <Box marginTop="70px"> 
+    <Box marginTop="70px">
+  
     {/* Animation Part Text */}
           <Box className="wrapper">
             <ul className ="dynamic-txt">
@@ -241,7 +242,7 @@ const Homepage = () => {
 
       {/* Footer section */}
       <Box>
-     
+        <Footer />
       </Box>
     </div>
   )

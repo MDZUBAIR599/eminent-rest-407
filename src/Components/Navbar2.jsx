@@ -1,11 +1,11 @@
-
 import { Box, Button, Drawer,  DrawerCloseButton, DrawerContent, DrawerOverlay, Image,  Link, Menu, MenuButton, MenuItem, MenuList, Text, useDisclosure } from '@chakra-ui/react'
 import React from 'react'
-import { isAuth } from '../IsAuth'
 import {ChevronDownIcon} from "@chakra-ui/icons"
-import { Navigate, useNavigate } from 'react-router'
-
 import styles from "../styles/Navbar2.module.css"
+import { isAuth } from './IsAuth'
+import { useNavigate } from 'react-router'
+import { NavLink } from 'react-router-dom'
+
 const Navbar2 = () => {
   const username=isAuth()
 const navigate =useNavigate();
@@ -13,17 +13,14 @@ const navigate =useNavigate();
 function handleSignout(){
   navigate("/")
 }
-function nav(){
-  navigate("/homepage")
-}
 
   return (
     <div>
         <Box className={styles.Navbar2box}>
            <Box className={styles.Nav_first}>
-          <Link to="/homepage"> 
-          <Image onClick={nav} height={'30px'} src={'https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/13.0.0/assets/logo/surveymonkey_logo_dark.svg'}></Image>
-          </Link>
+          <NavLink to="/"> 
+          <Image height={'30px'} src={'https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/13.0.0/assets/logo/surveymonkey_logo_dark.svg'}></Image>
+          </NavLink>
            <button className={styles.butnav1}>Dashboard</button>
            <button className={styles.butnav1}>My surveys</button>
            <button className={styles.butnav1}>Plans & pricing</button>
