@@ -61,11 +61,13 @@ function Grid() {
   
     return (
       <>
-        <Button height={"45px"} backgroundColor={'#3f3b33'} _hover={'#3f3b33'} ref={btnRef} colorScheme='teal' onClick={onOpen}>
-        <Link>
-            <Image widtth="45px" height={'45px'} src='https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/13.0.0/assets/ProductsIcon.svg'></Image>
-            </Link>
-        </Button>
+       <Box>
+       <Button width="62px" height={"45px"} backgroundColor={'#3f3b33'} _hover={'#3f3b33'} ref={btnRef} colorScheme='teal' onClick={onOpen}>
+       
+       <Image  width="200%" src='https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/13.0.0/assets/ProductsIcon.svg'></Image>
+
+   </Button>
+       </Box>
         <Drawer
           isOpen={isOpen}
           placement='right'
@@ -136,11 +138,13 @@ function Grid() {
   
     return (
       <>
-        <Button backgroundColor={'#3f3b33'} _hover={'#3f3b33'}  ref={btnRef} colorScheme='teal' onClick={onOpen}>
+       <Box>
+       <Button backgroundColor={'#3f3b33'} _hover={'#3f3b33'}  width="62px" ref={btnRef} colorScheme='teal' onClick={onOpen}>
         <Link>
             <Image  height={'45px'} src='https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/13.0.0/assets/HelpIcon.svg'></Image>
             </Link>
         </Button>
+       </Box>
         <Drawer
           isOpen={isOpen}
           placement='right'

@@ -52,18 +52,34 @@
     align-items: center;
 
 }
+.Card_head2{
+    display: flex;
+   justify-content: space-evenly;
+    /* height: 500px;
+    width: 100%; */
+    align-items: center;
+
+}
 .Card_head div{
     transition: box-shadow .3s;
     border-radius: 5px;
-    width: 315px;
-    height: 400px;
+    /* width: 315px;
+    height: 400px; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.Card_head2 div{
+    transition: box-shadow .3s;
+    border-radius: 5px;
+    /* width: 315px; */
+    /* height: 240px; */
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-    .Card_head div:hover{
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
 
+.Card_survey div:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    zoom:inherit ;
+}
    .tool_kit{
     margin-top: 60px;
     display: flex;
