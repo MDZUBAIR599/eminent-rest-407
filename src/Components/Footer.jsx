@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <Box marginTop={'50px'}>
         <hr />
-      <Select width={'100px'} 
+      <Select width={'130px'} 
           backgroundColor={'#6b787f'} 
           marginTop={'20px'} 
           marginLeft={'20px'} 
