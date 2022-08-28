@@ -4,8 +4,13 @@ import { isAuth } from './IsAuth';
 import Navbar2 from './Navbar2';
 import styles from "../styles/Dashboard.module.css"
 import Footer from './Footer';
+import { useNavigate } from 'react-router-dom';
 
 const Dashborad = () => {
+  const nav=useNavigate()
+  const navigt=()=>{
+   nav("/createsurvey")
+  }
   const username=isAuth();
   return (
     <div>
@@ -59,7 +64,7 @@ const Dashborad = () => {
         <Box backgroundColor={'#f7f8fa'} padding={'30px'}>
          <Box>
          <Text className={styles.get_start}>Let's get started & create your first survey!</Text>
-          <Button  _hover={'none'} backgroundColor={'#00b159 '} className={styles.create_but}>CREATE SURVEY</Button>
+          <Button onClick={navigt}  _hover={'none'} backgroundColor={'#00b159 '} className={styles.create_but}>CREATE SURVEY</Button>
          </Box>
          <Box textAlign={'left'} marginLeft={'20%'}>
           <Text fontSize={'20px'}>Survey Examples</Text>

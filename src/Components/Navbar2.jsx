@@ -18,7 +18,7 @@ function handleSignout(){
     <div>
         <Box className={styles.Navbar2box}>
            <Box className={styles.Nav_first}>
-          <NavLink to="/"> 
+          <NavLink to="/dashboard"> 
           <Image height={'30px'} src={'https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/13.0.0/assets/logo/surveymonkey_logo_dark.svg'}></Image>
           </NavLink>
            <button className={styles.butnav1}>Dashboard</button>
@@ -26,12 +26,17 @@ function handleSignout(){
            <button className={styles.butnav1}>Plans & pricing</button>
            </Box>
            <Box className={styles.Nav_first}>
+            <Box>
             <button className={styles.butnav2}>Upgrade</button>
+            </Box>
+            <Box>
+            <button className={styles.butnavc}>Create Survey</button>
+            </Box>
             <Grid />
             <Help />
             <Box>
             <Menu>
-                <MenuButton  marginLeft={'90px'} backgroundColor={'#3f3b33'}  height={'30px'}  color={'white'} _hover={'none'} _focus={'none'} as={Button} rightIcon={<ChevronDownIcon />}>
+                <MenuButton  marginLeft={'-30px'} backgroundColor={'#3f3b33'}  height={'30px'}  color={'white'} _hover={'none'} _focus={'none'} as={Button} rightIcon={<ChevronDownIcon />}>
                     {username}
                 </MenuButton>
                 <MenuList marginLeft={'60px'} fontWeight={"500"}>
@@ -56,9 +61,9 @@ function Grid() {
   
     return (
       <>
-        <Button backgroundColor={'#3f3b33'} _hover={'#3f3b33'} ref={btnRef} colorScheme='teal' onClick={onOpen}>
+        <Button height={"45px"} backgroundColor={'#3f3b33'} _hover={'#3f3b33'} ref={btnRef} colorScheme='teal' onClick={onOpen}>
         <Link>
-            <Image height={'25px'} src='https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/13.0.0/assets/ProductsIcon.svg'></Image>
+            <Image widtth="45px" height={'45px'} src='https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/13.0.0/assets/ProductsIcon.svg'></Image>
             </Link>
         </Button>
         <Drawer
@@ -131,9 +136,9 @@ function Grid() {
   
     return (
       <>
-        <Button backgroundColor={'#3f3b33'} _hover={'#3f3b33'} ref={btnRef} colorScheme='teal' onClick={onOpen}>
+        <Button backgroundColor={'#3f3b33'} _hover={'#3f3b33'}  ref={btnRef} colorScheme='teal' onClick={onOpen}>
         <Link>
-            <Image height={'25px'} src='https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/13.0.0/assets/HelpIcon.svg'></Image>
+            <Image  height={'45px'} src='https://cdn.smassets.net/assets/dashweb/smlib.globaltemplates/13.0.0/assets/HelpIcon.svg'></Image>
             </Link>
         </Button>
         <Drawer

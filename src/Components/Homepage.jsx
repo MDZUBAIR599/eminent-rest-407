@@ -1,12 +1,16 @@
-import { Box,Text,Button,Image,Link } from '@chakra-ui/react'
+import { Box,Text,Button,Image,Link, Flex, Grid } from '@chakra-ui/react'
 import React from 'react'
+import { useNavigate} from 'react-router-dom';
+import { products } from '../mock';
 
 import styles from "../styles/Home.module.css";
+import Cardspage from './Cardspage';
 import Footer from './Footer';
 import Navbar1 from './Navbar1'
-
+import Product from './product';
 
 const Homepage = () => {
+
   return (
     <div>
        <Navbar1 />
@@ -93,7 +97,9 @@ const Homepage = () => {
             <Text style={{fontSize: "16px",lineHeight:" 24px",marginTop:"20px",textAlign:"center",padding:"10px"}}>Collaboration tools and survey features that help your team work more efficiently.</Text>
       </div>
      </div>
-
+     <div>
+      <Cardspage/>
+      </div>
 
 
      {/* Tools that spark business breakthroughs start */}
@@ -239,6 +245,7 @@ const Homepage = () => {
       <Box className={styles.Net_p}>
         <Text>Net Promoter, Net Promoter System, Net Promoter Score, NPS and the NPS-related emoticons are registered <br /> trademarks of Bain & Company, Inc., Fred Reichheld and Satmetrix Systems, Inc.</Text>
       </Box>
+      
 
       {/* Footer section */}
       <Box>
